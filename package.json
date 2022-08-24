@@ -1,0 +1,29 @@
+{
+  "name": "kisakalenteri",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luukalindgren/kisakalenteri.git"
+  },
+  "author": "Luuka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luukalindgren/kisakalenteri/issues"
+  },
+  "homepage": "https://github.com/Luukalindgren/kisakalenteri#readme"
+}
