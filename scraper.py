@@ -4,7 +4,7 @@ import json                         # Python scriptin tiedot JSON:iin ja sieltä
 from bs4 import BeautifulSoup       # Tietojen "scrappaamisen" takia
 
 # TÄMÄ PYTHON SCRAPER HAKEE METRIXIN SIVUILTA PÄIVÄN KISAT
-# JA LISÄÄ NIISTÄ VALITUT TIEDOT KISAT.JSON -TIEDOSTOON.
+# JA LISÄÄ NIISTÄ VALITUT TIEDOT data.json -TIEDOSTOON.
 
 print("Haetaan kisoja...")
 
@@ -32,7 +32,7 @@ for result in kisat:                            # Täytyy käydä sivun HTML lä
     uusiKisa["alue"] = kisanAlue.text.strip()
     kisatJson["kisat"].append(uusiKisa)         # Lisätään jokainen kisa omana dictinä
 
-with open("kisat.json", "w") as file:
+with open("data.json", "w") as file:
     json.dump(kisatJson, file)                  # Kirjataan haetut kisat oikeassa muodossa JSON:iin
 
 print("Haku onnistui!")
