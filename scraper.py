@@ -12,7 +12,7 @@ date = str(datetime.date.today())               # Kisojen filtteröinti on URL:i
 URL = "https://discgolfmetrix.com/competitions_server.php?name=&date1=" + date + "&date2=" + date + "&registration_date1=&registration_date2=&country_code=FI&area=Varsinais-Suomi&from=1&to=20&page=all"
 page = requests.get(URL)                        
 
-soup = BeautifulSoup(page.content, "html.parser")
+soup = BeautifulSoup(page.content, "html.parser") # BeautifulSoup jäsentää HTML:n
 kisat = soup.find_all(class_="column")          # Kisat ovat divien alla joiden class="column" 
 
 määrä = 0
