@@ -2,25 +2,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgrey;
     margin: 0 auto;
-    padding: 20px 20px 60px;
 }
 
 .container {
     padding: 50px;
+    min-width: 500px;
 }
 
 .u-list {
     padding: 0px;
-    display: flex;
+
 }
 
 .list-item {
     padding: 20px;
     border: 1px solid;
     list-style: none;
+    min-width: 500px;
 }
 
 .logo-container {
-    height: 25vh;
-    margin-left: 45%;
+    min-width: 600px;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #999999;
 }
