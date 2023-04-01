@@ -11,11 +11,11 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "predev": "py ./scraper.py",
+    "predev": "python ./scraper.py",
     "dev": "next dev",
-    "prebuild": "py ./scraper.py",
+    "prebuild": "python ./scraper.py",
     "build": "next build",
-    "prestart": "py ./scraper.py",
+    "prestart": "python ./scraper.py",
     "start": "next start",
     "lint": "next lint"
   },
